@@ -1550,7 +1550,7 @@ namespace Kinovea.ScreenManager
                     ChangeSpeed(-25);
                     break;
                 case PlayerScreenCommands.ResetSpeed:
-                    ResetSpeed();
+                    lblSpeedTuner_DoubleClick(null, EventArgs.Empty);
                     break;
 
                 // Frame by frame navigation
@@ -2496,10 +2496,6 @@ namespace Kinovea.ScreenManager
                 return;
 
             sldrSpeed.StepJump(change / 200.0);
-        }
-        private void ResetSpeed()
-        {
-            sldrSpeed.Force(timeMapper.GetInputFromSlowMotion(1.0));
         }
         private void lblSpeedTuner_DoubleClick(object sender, EventArgs e)
         {
