@@ -217,6 +217,9 @@ namespace Kinovea.Services
                     hk(PlayerScreenCommands.GotoPreviousKeyframe, Keys.Control | Keys.Left),
                     hk(PlayerScreenCommands.GotoNextKeyframe, Keys.Control | Keys.Right),
                     hk(PlayerScreenCommands.GotoSyncPoint, Keys.F8),
+                    hk(PlayerScreenCommands.SetHandlerLeft, Keys.OemOpenBrackets),
+                    hk(PlayerScreenCommands.SetHandlerRight, Keys.OemCloseBrackets),
+                    hk(PlayerScreenCommands.ResetHandlers, Keys.Control | Keys.OemBackslash),
                     
                     // Synchronization
                     hk(PlayerScreenCommands.IncreaseSyncAlpha, Keys.Alt | Keys.Add),

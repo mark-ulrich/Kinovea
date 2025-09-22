@@ -1593,7 +1593,16 @@ namespace Kinovea.ScreenManager
                 case PlayerScreenCommands.GotoSyncPoint:
                     ForceCurrentFrame(m_FrameServer.Metadata.TimeOrigin, true);
                     break;
-
+                case PlayerScreenCommands.SetHandlerLeft:
+                    btnSetHandlerLeft_Click(null, EventArgs.Empty);
+                    break;
+                case PlayerScreenCommands.SetHandlerRight:
+                    btnSetHandlerRight_Click(null, EventArgs.Empty);
+                    break;
+                case PlayerScreenCommands.ResetHandlers:
+                    btnHandlersReset_Click(null, EventArgs.Empty);
+                    break;
+                
                 // Synchronization
                 case PlayerScreenCommands.IncreaseSyncAlpha:
                     IncreaseSyncAlpha();

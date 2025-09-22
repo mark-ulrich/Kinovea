@@ -79,6 +79,9 @@ namespace Kinovea.Services
         GotoPreviousKeyframe,
         GotoNextKeyframe,
         GotoSyncPoint,
+        SetHandlerLeft,
+        SetHandlerRight,
+        ResetHandlers,
         
         // Synchronization
         IncreaseSyncAlpha,
