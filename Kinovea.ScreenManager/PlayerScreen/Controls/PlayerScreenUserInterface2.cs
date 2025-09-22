@@ -498,7 +498,7 @@ namespace Kinovea.ScreenManager
             sldrSpeed.Minimum = 0;
             sldrSpeed.Maximum = 1000;
             timeMapper.SetInputRange(sldrSpeed.Minimum, sldrSpeed.Maximum);
-            timeMapper.SetSlowMotionRange(0, 2);
+            timeMapper.SetSlowMotionRange(0, 10);
             slowMotion = 1;
             sldrSpeed.Initialize(timeMapper.GetInputFromSlowMotion(slowMotion));
 
@@ -2499,8 +2499,7 @@ namespace Kinovea.ScreenManager
         }
         private void ResetSpeed()
         {
-            double mid = (sldrSpeed.Maximum - sldrSpeed.Minimum) / 2.0;
-            sldrSpeed.Force(mid);
+            sldrSpeed.Force(timeMapper.GetInputFromSlowMotion(1.0));
         }
         private void lblSpeedTuner_DoubleClick(object sender, EventArgs e)
         {
