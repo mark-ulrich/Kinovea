@@ -64,6 +64,7 @@ namespace Kinovea.Services
         DecreaseSpeed1,
         DecreaseSpeedRoundTo10,
         DecreaseSpeedRoundTo25,
+        ResetSpeed,
 
         // Frame by frame navigation
         GotoPreviousImage,

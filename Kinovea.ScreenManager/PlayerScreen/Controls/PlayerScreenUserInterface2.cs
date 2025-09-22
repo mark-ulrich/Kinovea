@@ -1549,6 +1549,9 @@ namespace Kinovea.ScreenManager
                 case PlayerScreenCommands.DecreaseSpeedRoundTo25:
                     ChangeSpeed(-25);
                     break;
+                case PlayerScreenCommands.ResetSpeed:
+                    ResetSpeed();
+                    break;
 
                 // Frame by frame navigation
                 case PlayerScreenCommands.GotoPreviousImage:
@@ -2484,6 +2487,11 @@ namespace Kinovea.ScreenManager
                 return;
 
             sldrSpeed.StepJump(change / 200.0);
+        }
+        private void ResetSpeed()
+        {
+            double mid = (sldrSpeed.Maximum - sldrSpeed.Minimum) / 2.0;
+            sldrSpeed.Force(mid);
         }
         private void lblSpeedTuner_DoubleClick(object sender, EventArgs e)
         {

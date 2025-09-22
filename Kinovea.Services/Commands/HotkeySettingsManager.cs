@@ -202,6 +202,7 @@ namespace Kinovea.Services
                     hk(PlayerScreenCommands.DecreaseSpeed1, Keys.Control | Keys.Down),
                     hk(PlayerScreenCommands.DecreaseSpeedRoundTo10, Keys.Shift | Keys.Down),
                     hk(PlayerScreenCommands.DecreaseSpeedRoundTo25, Keys.Down),
+                    hk(PlayerScreenCommands.ResetSpeed, Keys.Control | Keys.Shift | Keys.R),
                     
                     // Frame by frame navigation
                     hk(PlayerScreenCommands.GotoPreviousImage, Keys.Left),
